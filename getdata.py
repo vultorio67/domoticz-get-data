@@ -5,7 +5,7 @@ import urllib.request
 import time
 import datetime as d
 
-datefile = 'data/dht11_jeu_' + str(d.datetime.now().date()) + '.csv'
+datefile = 'dht11_jeu_' + str(d.datetime.now().date()) + '.csv'
 
 with open(datefile, "a+") as file_object:
     fieldnames = ['date', 'time', 'temp', 'humidity']
@@ -15,7 +15,7 @@ with open(datefile, "a+") as file_object:
 
 while open("command.txt", 'r').read() != "stop":
 
-    date = 'data/dht11_jeu_' + str(d.datetime.now().date()) + '.csv'
+    date = 'dht11_jeu_' + str(d.datetime.now().date()) + '.csv'
     with open(date, "a+") as file_object:
 
         fieldnames = ['date', 'time', 'temp', 'humidity']
