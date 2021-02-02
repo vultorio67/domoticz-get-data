@@ -21,7 +21,7 @@ while open("command.txt", 'r').read() != "stop":
         fieldnames = ['date', 'time', 'temp', 'humidity']
         spamwriter = csv.DictWriter(file_object, fieldnames=fieldnames)
 
-        url = "http://192.168.1.60:8080/json.htm?username=ZXZhbg===&password=ZXZubw===&type=devices&rid=3"
+        url = "http://192.168.1.60:8080/json.htm?username==&password==&type=devices&rid=3"
         response = urllib.request.urlopen(url)
         data = json.loads(response.read())
 
